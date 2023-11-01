@@ -1,0 +1,35 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Binsec"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "ct-violation",
+          "level": "error",
+          "message": {
+            "text": "conditional branch depends on secret value"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "test.cpp",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 0
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
